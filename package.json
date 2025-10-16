@@ -1,0 +1,14 @@
+{
+  "name": "@hackclub-community/atproto-pds",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT AND APACHE-2.0",
+  "packageManager": "pnpm@10.18.2",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.51.0"
+  }
+}

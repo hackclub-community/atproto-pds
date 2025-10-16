@@ -1,0 +1,7 @@
+packages:
+  - service
+
+onlyBuiltDependencies:
+  - better-sqlite3
+  - cbor-extract
+  - sharp
