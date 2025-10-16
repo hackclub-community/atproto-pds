@@ -1,3 +1,8 @@
+---
+canonical: https://github.com/bluesky-social/pds/blob/main/ACCOUNT_MIGRATION.md
+commit_id: f7600921c75b84b1e6d417985830d30960a704d9
+---
+
 # Account Migration
 
 **Update May 2025:** An updated guide to account migration is now [part of the atproto specifications](https://atproto.com/guides/account-migration). There is also [a blog post available](https://whtwnd.com/bnewbold.net/3l5ii332pf32u) which describes how to do an account migration using a command-line tool (`goat`).

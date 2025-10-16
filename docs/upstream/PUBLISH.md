@@ -1,3 +1,8 @@
+---
+canonical: https://github.com/bluesky-social/pds/blob/main/PUBLISH.md
+commit_id: 85c924bdff6ce6e946ea49c5a8053cf21962d188
+---
+
 # Publishing a new version of the PDS distro
 
 Below are the steps to publish a new version of the PDS distribution.  The distribution is hosted by GitHub Container Registry, supported by the `build-and-push-ghcr` workflow.  We use git tags to generate Docker tags on the resulting images.
