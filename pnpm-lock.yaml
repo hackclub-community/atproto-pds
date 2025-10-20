@@ -17,6 +17,9 @@ importers:
       '@atproto/pds':
         specifier: 0.4.182
         version: 0.4.182
+      '@dotenvx/dotenvx':
+        specifier: ^1.51.0
+        version: 1.51.0
 
 packages:
 

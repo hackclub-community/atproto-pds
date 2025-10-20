@@ -2,7 +2,12 @@
   "name": "@hackclub-community/atproto-pds",
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dotenvx:run": "dotenvx run -f .env.production --",
+    "dotenvx:set": "dotenvx set -f .env.production --",
+    "gen-keys:jwt": "pnpm run gen-keys:secure-secret",
+    "gen-keys:secure-secret": "openssl rand --hex 16",
+    "gen-keys:plc": "openssl ecparam --name secp256k1 --genkey --noout --outform DER | tail --bytes=+8 | head --bytes=32 | xxd --plain --cols 32" 
   },
   "keywords": [],
   "author": "",
