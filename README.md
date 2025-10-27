@@ -23,5 +23,9 @@ This project is dual-licensed under MIT and Apache 2.0 terms:
 
 The dual-licensing setup were adopted from [the upstream project][pds-repo] by [Bluesky Social][bsky].
 
+### Companion Slack app/bot
+
+Code and documentation at [the `slackbot` directory](./slackbot/) is licensed separately under [the AGPL-3.0 license](./slackbot/LICENSE).
+
 [pds-repo]: https://github.com/bluesky-social/pds
 [bsky]: https://github.com/bluesky-social
