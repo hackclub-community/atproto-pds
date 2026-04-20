@@ -1,9 +1,12 @@
 {
     "cSpell.words": [
-        "fediverse",
-        "slackbot",
         "atproto",
-        "ATProto"
+        "ATProto",
+        "dotenvx",
+        "fediverse",
+        "slackbot"
     ],
-    "git.alwaysSignOff": true
+    "git.alwaysSignOff": true,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
 }

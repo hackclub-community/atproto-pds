@@ -1,5 +1,6 @@
 packages:
   - service
+  - slackbot
 
 onlyBuiltDependencies:
   - better-sqlite3
