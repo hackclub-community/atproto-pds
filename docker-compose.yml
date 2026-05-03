@@ -16,10 +16,13 @@ services:
       DATABASE_URL: "postgresql://pds-prod:4f03c7f15a4689edc0558714b50fbff61c7fb9fdbae3382377b138fbf8a49a818b5ae3bcd9612357524009da4645fc1e690829d1cd7920caef627f55fb4d7c8e8798b9@postgres:5432/pds"
     env_file: .env.production.decrypted
     ports:
-      - 3000
+      - 3000:3000
     volumes:
       - blob_data:/var/lib/tranquil-pds/blobs
       - store_data:/var/lib/tranquil-pds/store
+    networks:
+      - pds-ops
+      - kamal-proxy
     healthcheck:
       test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/xrpc/_health"]
       interval: 30s
@@ -54,8 +57,16 @@ services:
           memory: 512M
         reservations:
           memory: 128M
+    networks:
+      - pds-ops
 
 volumes:
   postgres_data:
   blob_data:
   store_data:
+
+networks:
+  pds-ops:
+  kamal-proxy:
+    external: true
+    name: once
