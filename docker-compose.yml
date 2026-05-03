@@ -13,7 +13,7 @@ services:
       INVITE_CODE_REQUIRED: "true"
       CONTACT_EMAIL: "society@alumni.hackclub.community"
       MAX_BLOB_SIZE: "2147483648" # 2 GB
-      DATABASE_URL: "postgresql://pds-prod:4f03c7f15a4689edc0558714b50fbff61c7fb9fdbae3382377b138fbf8a49a818b5ae3bcd9612357524009da4645fc1e690829d1cd7920caef627f55fb4d7c8e8798b9@postgres:5432/pds"
+      DATABASE_URL: "postgresql://tranquil_pds:4f03c7f15a4689edc0558714b50fbff61c7fb9fdbae3382377b138fbf8a49a818b5ae3bcd9612357524009da4645fc1e690829d1cd7920caef627f55fb4d7c8e8798b9@postgres:5432/pds"
     env_file: .env.production.decrypted
     ports:
       - 3000:3000
@@ -39,7 +39,7 @@ services:
     image: postgres:18-alpine
     restart: unless-stopped
     environment:
-      POSTGRES_USER: pds-prod
+      POSTGRES_USER: tranquil_pds
       POSTGRES_PASSWORD: "4f03c7f15a4689edc0558714b50fbff61c7fb9fdbae3382377b138fbf8a49a818b5ae3bcd9612357524009da4645fc1e690829d1cd7920caef627f55fb4d7c8e8798b9"
       POSTGRES_DB: pds
     volumes:
