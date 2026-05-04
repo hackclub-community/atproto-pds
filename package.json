@@ -1,4 +1,8 @@
 {
+	"scripts": {
+		"encrypt": "dotenvx encrypt -f .env.production",
+		"decrypt": "dotenvx decrypt -f .env.production"
+	},
 	"devDependencies": {
 		"@dotenvx/dotenvx": "^1.64.0"
 	}
